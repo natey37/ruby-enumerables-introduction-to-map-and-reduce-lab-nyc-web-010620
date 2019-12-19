@@ -5,6 +5,7 @@ def map_to_negativize(source_array)
   while index < source_array.count do 
     new_number = source_array[index] * -1 
     new_array << new_number
+    index += 1
   end 
   return new_array
 end 
