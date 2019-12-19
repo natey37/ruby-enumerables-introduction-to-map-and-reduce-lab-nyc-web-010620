@@ -73,7 +73,21 @@ def reduce_to_all_true(source_array)
   end 
 end 
 
-def reduce_to_any_true 
+def reduce_to_any_true(source_array)
+  array = []
+  index = 0 
+  while index < source_array.count do 
+    value = !!source_array[index]
+    array << value 
+    index += 1 
+  end 
+  
+  if array.include?(true)
+    return true 
+  else 
+    return false 
+  end 
+end 
   
   
   
