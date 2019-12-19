@@ -6,7 +6,7 @@ def map_to_negativize(source_array)
     new_number = source_array[index] * -1 
     new_array << new_number
   end 
-  new_array
+  return new_array
 end 
 
 def map_to_no_change(source_array)
@@ -16,7 +16,7 @@ def map_to_no_change(source_array)
     new_array << source_array[index]
     index += 1 
   end 
-  new_array
+  return new_array
 end 
 
 def map_to_double(source_array)
@@ -27,7 +27,7 @@ def map_to_double(source_array)
     new_array << new_number
     index += 1 
   end 
-  new_array
+  return new_array
 end 
 
 def map_to_square(source_array)
@@ -38,5 +38,5 @@ def map_to_square(source_array)
     new_array << new_number
     index += 1 
   end 
-  new_array
+  return new_array
 end 
