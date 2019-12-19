@@ -66,7 +66,14 @@ def reduce_to_all_true(source_array)
     index += 1 
   end 
   
-  if array.
+  if array.include?(false)
+    return false 
+  else 
+    return true 
+  end 
+end 
+
+def reduce_to_any_true 
   
   
   
